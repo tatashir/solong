@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 23:34:56 by tatashir          #+#    #+#             */
-/*   Updated: 2023/04/29 16:42:15 by tatashir         ###   ########.fr       */
+/*   Updated: 2023/04/30 19:53:41 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	key_press(int keycode, t_solong *sl)
 	if (sl->line[sl->y][sl->x] == 'N')
 		point = 'E';
 	else
-		point = 'X';
+		point = '0';
 	if (keycode == KEY_W)
 		move_w(sl, point);
 	else if (keycode == KEY_S)
