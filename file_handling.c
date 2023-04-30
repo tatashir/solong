@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   input_file.c                                       :+:      :+:    :+:   */
+/*   file_handling.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tatashir <tatashir@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/29 15:21:01 by tatashir          #+#    #+#             */
-/*   Updated: 2023/04/29 16:53:00 by tatashir         ###   ########.fr       */
+/*   Updated: 2023/04/30 19:49:27 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	file_handling(t_map *map, char *filepath)
 {
-	int		i;
+	int	i;
 
 	map->filepath = filepath;
 	map_rowcount(map);
