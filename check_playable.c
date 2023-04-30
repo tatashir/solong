@@ -6,11 +6,17 @@
 /*   By: tatashir <tatashir@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 19:26:07 by tatashir          #+#    #+#             */
-/*   Updated: 2023/04/21 22:04:14 by tatashir         ###   ########.fr       */
+/*   Updated: 2023/04/30 19:44:56 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
+
+void	check_playable(t_solong *sl)
+{
+	check_goal(sl);
+	check_collect(sl);
+}
 
 void	check_goal(t_solong *sl)
 {
@@ -59,10 +65,4 @@ void	check_collect(t_solong *sl)
 	if (!(dfs_collect(track.y, track.x, &track)))
 		error_map(track.line, sl->row, PLAYABLE_COLLECT);
 	free_array(track.line, sl->row);
-}
-
-void	check_playable(t_solong *sl)
-{
-	check_goal(sl);
-	check_collect(sl);
 }
